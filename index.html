@@ -8,17 +8,16 @@
             .header{
                 display: flex;
                 flex-direction: column;
- 
                 justify-content: flex-start;
           
-                
+                background-color: rgba(0,0,0,1);
                 padding: 2em;
-                min-height: 650px;
+                min-height: 630px;
                 text-align: center;
           
             }
             body{
-                background-color: black;
+                background:linear-gradient(180deg, rgba(0,0,0,1) 1%, rgb(3, 3, 11) 35%, rgb(8, 27, 49) 100%);
                 margin: 0px;
             }
             h1{
@@ -39,13 +38,16 @@
             }
             h3{
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 37px;
+                font-size: 350%;
             }
             .infoBlock{
                 display: flex;
                 flex-direction: column;
-
-
+                color: white;
+            }
+            p, ul{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 150%;
             }
         </style>
 
@@ -55,34 +57,36 @@
         
 
         <div class="header">
-            <img src="images/drone-bw.jpg" style="max-width: 100%; min-height: auto;" alt="A drone in a moody black and white image, sitting on top of a box">
+            <img src="images/drone-bw.webp" style="max-width: 100%; min-height: auto; border-radius: 25px;" alt="A drone in a moody black and white image, sitting on top of a box">
             <h1 style="color: white; font-family: Arial, Helvetica, sans-serif; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap;">Big Picture, Big Impact</h1>
             <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3vw; position: absolute; top: 32%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap;">Discover our selection of premium drones</h2>
         </div>
 
-        <div class="container" style="display: flex; flex-direction: column; max-width: 650px; margin: auto; background-color: white; border-radius: 25px; padding: 16px; margin-top: 4px; margin-bottom: 16px;">
+        <div id="containerGradient" style="background:linear-gradient(180deg, rgba(0,0,0,1) 1%, rgb(3, 3, 11) 35%, rgb(8, 27, 49) 100%);">
+            <div class="container" style="display: flex; flex-direction: column; max-width: 70vw; margin: auto; background-color:rgba(57, 60, 65, 0.5);  border-radius: 20px; padding: 32px; margin-top: 4px; margin-bottom: 16px;">
 
-            <div class="infoBlock">
-                <h3>Find the right drone for you today</h3>
-                <p>When selecting a drone, it is important to keep in mind where you are taking the drone and what 
-                you require of the drone. A landscape may require a good camera which weighs down the drone, or an action shot
-                requires that the drone be fast and nimble. Everyones' needs are different, this is why when reviewing our products it
-                is important to keep in mind: </p>
-                <ul>
-                    <li>Weight</li>
-                    <li>Size</li>
-                    <li>Flight range</li>
-                    <li>Camera quality</li>
-                    <li>Flight rules</li>
-                </ul>
+                <div class="infoBlock">
+                    <h3>The right drone for you</h3>
+                    <p>When selecting a drone, it is important to keep in mind where you are taking the drone and what 
+                    you require of the drone. A landscape may require a good camera which weighs down the drone, or an action shot
+                    requires that the drone be fast and nimble. Everyones' needs are different, this is why when reviewing our products it
+                    is important to keep in mind: </p>
+                    <ul>
+                        <li>Weight</li>
+                        <li>Size</li>
+                        <li>Flight range</li>
+                        <li>Camera quality</li>
+                        <li>Flight rules</li>
+                    </ul>
+
+                </div>
+
+                <div class="infoBlock">
+                    <h3>Our selection</h3>
+                </div>
+
 
             </div>
-
-            <div class="infoBlock">
-                <h3>Our selection</h3>
-            </div>
-
-
         </div>
 
 
