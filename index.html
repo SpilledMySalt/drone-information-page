@@ -41,6 +41,16 @@
                 font-size: 350%;
                 text-align: center;
                 font-weight: bold;
+
+                /*Create gradient for text, PEAR said not enough colour :/. Apple barely has colour */
+                background-image: radial-gradient(circle at 12.3% 19.3%, rgb(145, 146, 232) 0%, rgb(135, 173, 243) 100.2%);
+                background-size: 100%;
+                background-repeat: repeat;
+
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
             }
             h4{
                 font-family: Arial, Helvetica, sans-serif;
@@ -55,6 +65,10 @@
             p, ul, ol{
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 135%;
+                line-height: 130%;
+            }
+            li{
+                margin: 10px 0;
             }
             a{
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -75,43 +89,52 @@
                 
             }
         </style>
-
     </head>
 
     <body>
-        
-
         <div class="header">
             <img src="images/drone-bw.webp" style="max-width: 100%; min-height: auto; border-radius: 25px;" alt="A drone in a moody black and white image, sitting on top of a box">
             <h1 style="color: white; font-family: Arial, Helvetica, sans-serif; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap;">Big Picture, Big Impact</h1>
-            <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3vw; position: absolute; top: 32%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap;">Discover our selection of premium drones</h2>
+            <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3vw; position: absolute; top: 32%; left: 50%; transform: translate(-50%, -50%); white-space: nowrap;"><a href="#ourSelection" style="text-decoration: none;">Discover our selection of premium drones</a></h2>
         </div>
 
         <div id="containerGradient" style="background:linear-gradient(180deg, rgba(0,0,0,1) 1%, rgb(3, 3, 11) 35%, rgb(8, 27, 49) 100%);">
             <div class="container" style="display: flex; flex-direction: column; max-width: 70vw; margin: auto; background-color:rgba(57, 60, 65, 0.5);  border-radius: 20px; padding: 32px; margin-top: 4px; margin-bottom: 16px;">
 
                 <div class="infoBlock">
+                    <h3>Important Articles</h3>
+                    <p>We at <b>Travel Drones</b> know it can be hard to find the perfect drone, or even begin to understand where to start. This is why we have carefully curated a selection of drones for travelers of all walks of life. Moreover, we have a couple articles crafted to help you find the right drone. Check them out!</p>
+                    <ul>
+                        <li><a href="#whyTravelDrone">Why choose a travel drone?</a></li>
+                        <li><a href="#selectDrone">How to select the correct drone</a></li>
+                        <li><a href="#ourSelection">Our curated selection of drones</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="infoBlock" id="whyTravelDrone">
                     <h3>Why a travel drone?</h3>
-                    <p> Everyone has moments they never want to forget. But how do you savour them in a way that captures the big picture? Drones are known for their ability to fly, combine that with high quality picture and you'll have photos worthy of being framed. Travel drones enable you to capture your wildest adventures without worrying about being unable to get the right angle. Drones are freely adjustable and don't require a tripod to stand straight. Even better, they can reach angles that traditional cameras just can't reach. This makes taking photos up high and down low that much easier. Now, everyone will be able to see the fascinating places you visited from wherever you choose. Drones aren't capable of just photos too. They are excellent for taking videos of the surrounding landscapes or the fun of your family and friends. As drones are unintrusive, it's easy to capture authentic memories of everyone living their best life. Whether it be stories around a campfire, kayaks and canoes, or scaling a mountain, a drone can capture it all with ease. Drones are also very portable and easy to carry with the ability to fold over and composition of lightweight materials, so don't worry about not being able to take it along with you. With our wide selection of drones, there is sure to be something to fit your needs. There's no reason no reason for you to not take a drone with you on your next vacation. If you don't know where to start, we have you covered! 
+                    <p> Everyone has moments they never want to forget. But how do you savour them in a way that captures the big picture? Drones are known for their ability to fly, combine that with high quality picture and you'll have photos worthy of being framed. Travel drones enable you to capture your wildest adventures without worrying about being unable to get the right angle. Drones are freely adjustable and don't require a tripod to stand straight. Even better, they can reach angles that traditional cameras just can't reach. This makes taking photos up high and down low that much easier. Now, everyone will be able to see the fascinating places you visited from wherever you choose. Drones aren't capable of just photos too. They are excellent for taking videos of the surrounding landscapes or the fun of your family and friends. As drones are unintrusive, it's easy to capture authentic memories of everyone living their best life. Whether it be stories around a campfire, kayaks and canoes, or scaling a mountain, a drone can capture it all with ease. Drones are also very portable and easy to carry with the ability to fold over and composition of lightweight materials, so don't worry about not being able to take it along with you. With our wide selection of drones, there is sure to be something to fit your needs. There's no reason no reason for you to not take a drone with you on your next vacation. <a href="#selectDrone">If you don't know where to start, we have you covered!</a> 
 
                     </p>
                     <img src="images/drone-shots.gif" alt="Gif of multiple drone shots" style="border-radius: 25px;">
                 </div>
 
-                <div class="infoBlock">
+                <div class="infoBlock" id="selectDrone">
                     <h3>The right drone for you</h3>
                     <p>When selecting a drone, it is important to keep in mind where you are taking the drone and what you require of the drone. A landscape may require a good camera which weighs down the drone, or an action shot requires that the drone be fast and nimble. This is why we've broken down some important points to consider when choosing a drone for travel.  </p>
                     <ol>
-                        <li>Most important for many travelers is portability, not everyone has the luxury of aids to carry heavy drones which is why we recommend identifying if your travel plans will be weighed down by a heavy drone. Our selection has a wide range of drones which can accommodate portability. </li>
-                        <li>Camera quality is the main reason why one may invest in a drone, half the fun is getting those amazing shots. However, sometimes a super high camera quality may not be needed depending on the content you aim to produce. If you are shooting for social media or other forms of media which heavily compresses your video, you may not need a drone in 4K. By saving budget on the camera, it will allow you to invest the money into other drones which better fit your needs. </li>
-                        <li>Battery life is important to consider when deciding on a drone. If you plan on filming timelapses or films, battery life is an area which you must not ignore when selecting a drone. If you plan on filming short clips, then battery life may not be as important as your drone does not need as much airtime. </li>
-                        <li>Regulations are important to consider when travelling to places you are unfamiliar with. Some countries have very strict rules on drone usage and designated no-fly zones. This is why we recommend you do your due diligence beforehand; no one wants to lose their expensive drone! </li>
+                        <li>Most important for many travelers is <b>portability</b>, not everyone has the luxury of aids to carry heavy drones which is why we recommend identifying if your travel plans will be weighed down by a heavy drone. Our selection has a wide range of drones which can accommodate portability. </li>
+                        <li><b>Camera quality</b> is the main reason why one may invest in a drone, half the fun is getting those amazing shots. However, sometimes a super high camera quality may not be needed depending on the content you aim to produce. If you are shooting for social media or other forms of media which heavily compresses your video, you may not need a drone in 4K. By saving budget on the camera, it will allow you to invest the money into other drones which better fit your needs. </li>
+                        <li><b>Battery life</b> is important to consider when deciding on a drone. If you plan on filming timelapses or films, battery life is an area which you must not ignore when selecting a drone. If you plan on filming short clips, then battery life may not be as important as your drone does not need as much airtime. </li>
+                        <li><b>Regulations</b> are important to consider when travelling to places you are unfamiliar with. Some countries have very strict rules on drone usage and designated no-fly zones. This is why we recommend you do your due diligence beforehand; no one wants to lose their expensive drone! </li>
                     </ol>
-                    <p>Got an idea of what you're looking for? Check out our selection below!</p>
+                    <p>Got an idea of what you're looking for? <a href="#ourSelection">Check out our selection below!</a></p>
 
                 </div>
 
-                <div class="infoBlock">
+                <div class="infoBlock" id="ourSelection">
                     <h3>Our selection</h3>
                     <div class="droneSelection" style="display: flex; gap: 24px; align-items: stretch;">
                         <div class="selectionColumn">
